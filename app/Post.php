@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+
     protected $fillable = [
         'title',
         'body',
@@ -21,5 +22,6 @@ class Post extends Model
        return $this->orderBy('updated_at', 'DESC')->paginate($limit_count);
 
     }
+
 
 }
